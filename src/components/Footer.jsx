@@ -24,14 +24,14 @@ function Footer() {
         <div className="max-w-[1810px] mx-auto">
           <div className="h-[418px] rounded-2xl md:rounded-[32px] overflow-hidden relative">
             <img
-              src="/background.png"
+              src="/background1.png"
               className="w-full h-full object-cover absolute inset-0 z-0"
-              alt="Background"
+              alt="Elev8 Group – Digitale Marketing Agentur Hintergrundbild"
             />
             <img
-              src="/syntech_logo.png"
+              src="/logo2.svg"
               className="max-w-[382px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute z-10"
-              alt="Syntech"
+              alt="Elev8 Group Logo"
             />
           </div>
         </div>
@@ -46,20 +46,19 @@ function Footer() {
                 Kontakt:
               </h2>
               <a
-                href="mailto:office@syn-tech.ch"
+                href="mailto:kontakt@elev8-grp.com"
                 className="inline-block text-[32px] md:text-[40px] lg:text-[46px] font-bold text-[#111111] border-b-[3px] md:border-b-4 border-[#111111] pb-1 hover:text-blue-600 hover:border-blue-600 transition-colors mb-8"
               >
-                office@syn-tech.ch
+                kontakt@elev8-grp.com
               </a>
 
-              <p className="text-[#666666] text-[15px] font-medium leading-relaxed max-w-sm mt-4">
-                Mit Kreativität und Leidenschaft gestaltet.
-                <br />
+              <p className="text-[#666666] text-[15px] font-medium leading-relaxed max-w-lg mt-4">
+                Mit Kreativität und Leidenschaft gestaltet. <br />
                 Bleiben wir in Verbindung – kontaktieren Sie uns jederzeit!
               </p>
 
               <a
-                href="mailto:admin@syn-tech.ch"
+                href="mailto:info@elev8-grp.com"
                 className="mt-8 flex items-center bg-[#EDEDED] rounded-full pr-6 pl-1.5 py-1.5 gap-4 hover:bg-[#E2E2E2] transition-colors w-max"
               >
                 <div className="bg-[#0000FF] text-white rounded-full w-9 h-9 flex items-center justify-center shadow-sm">
@@ -87,7 +86,7 @@ function Footer() {
 
             <div className="mt-24 flex items-center gap-6 text-[13px] font-semibold text-[#666666]">
               <span>Alle Rechte vorbehalten</span>
-              <span>&copy; 2026</span>
+              <span>&copy; {new Date().getFullYear()}</span>
             </div>
           </div>
 

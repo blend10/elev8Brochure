@@ -51,7 +51,7 @@ const navLinks = [
   { href: "#projekte", label: "Projekte" },
 ];
 
-const Navigation = () => {
+const   Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleStateChange = (state) => {
@@ -73,14 +73,14 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="w-full bg-white relative z-50">
+    <nav aria-label="Hauptnavigation" className="w-full bg-white relative z-50">
       <div className="container">
         <div className="flex justify-between items-center h-24">
           <div className="shrink-0 flex items-center">
             <a href="/">
               <img
-                src="/syntechlogo.svg"
-                alt="SynTech Logo"
+                src="/logo.svg"
+                alt="Elev8 Group Logo"
                 className="h-16 w-auto"
               />
             </a>
@@ -103,13 +103,13 @@ const Navigation = () => {
           {/* Desktop: CTA Button (hidden at ≤1024px) */}
           <div className="hidden lg:flex items-center">
             <a
-              href="mailto:admin@syn-tech.ch"
+              href="mailto:kontakt@elev8-grp.com"
               className="flex items-center rounded-full bg-[#0000FF] border border-[#5235F6] py-[6px] transition-transform hover:scale-105"
             >
               <span className="font-poppins font-medium text-white pl-[27px] pr-[12px] my-auto">
                 Kontakt aufnehmen
               </span>
-              <img src="/navButton.svg" alt="Nav Button" className="mr-[7px]" />
+              <img src="/navButton.svg" alt="" aria-hidden="true" className="mr-[7px]" />
             </a>
           </div>
         </div>
@@ -136,7 +136,7 @@ const Navigation = () => {
             </a>
           ))}
           <a
-            href="mailto:admin@syn-tech.ch"
+            href="info@elev8-grp.com"
             className="flex items-center justify-center rounded-full bg-[#0000FF] border border-[#5235F6] py-[10px] px-[20px] mt-4 no-underline transition-transform hover:scale-105"
           >
             <span className="font-poppins font-medium text-white text-[14px]">

@@ -4,22 +4,22 @@ import MarqueeBadge from "./MarqueeBadge";
 
 const testimonials = [
   {
-    name: "Frank Wolf",
-    role: "Wolf Solution GmbH",
-    text: "Die Zusammenarbeit mit Syntech Solutions AG war für Wolf Solutions GmbH ein echter Meilenstein. Das Team hat eine perfekt auf uns zugeschnittene E-Commerce-Plattform entwickelt und uns kompetent durch die digitale Transformation begleitet. Die Ergebnisse übertreffen unsere Erwartungen – sowohl in der Performance als auch im Kundenerlebnis.",
-    avatar: "/selectedWork/frank.png",
+    name: "JANA",
+    role: "hibike",
+    text: "Wir wollten unsere Website bewusst anders aufbauen als die Konkurrenz. Schon das erste Konzept hat uns mit den Ideen und der Geschwindigkeit beeindruckt. Der Kontakt mit Muhamed und seinem Team ist immer zuverlässig und unkompliziert. Wir hätten keine besseren Ansprechpartner für unser Projekt finden können.",
+    avatar: "/selectedWork/jana.png",
   },
   {
-    name: "Dario Ruckstuhl",
-    role: "FIDRO GmbH",
-    text: "Wir haben bei der Entwicklung unserer Website, mobilen Anwendung und unseres CRM-Systems zusammengearbeitet. Sie waren sehr professionell, zuverlässig und stets bereit, auf jede Anfrage oder Änderung zu reagieren. Mit der geleisteten Arbeit und dem Service sind wir äußerst zufrieden!",
-    avatar: "/selectedWork/dario.png",
+    name: "Dr. B. Vogel  - RA & Unternehmer   ",
+    role: "Crantec AG",
+    text: "Als aktiver Anwalt mit Projekten der Baubranche wollte ich die Potenziale des Online Marketings nutzen. Auf Empfehlung traf ich auf Muhamed und war bereits nach dem ersten Austausch begeistert. Unsere neue Webpräsenz wurde schnell und zuverlässig umgesetzt. Wir sind mehr als zufrieden und empfehlen das Team klar weiter.",
+    avatar: "/selectedWork/dr.png",
   },
   {
-    name: "Timo Kraaijkamp",
-    role: "Spandoekman.nl",
-    text: "Nach 13 Jahren unseren Onlineshop komplett zu erneuern, war kein leichter Schritt – besonders mit über 1.500 individuell konfigurierbaren Produkten. Doch gemeinsam mit Syntech Solutions AG haben wir es erfolgreich umgesetzt. Eine anspruchsvolle Aufgabe, die dank ihrer Erfahrung und Struktur möglich wurde.",
-    avatar: "/selectedWork/timo.png",
+    name: "M. Rumold",
+    role: "REMAX Elite GmbH",
+    text: "Starke Agentur mit einem coolen Team! Unsere Webpräsenz hat ein komplettes Redesign erhalten und wurde auf Umsatzmaximierung optimiert. Wir arbeiten mit der SharkAgency strategisch zusammen und geben unsere Marketing-Strategie in die Hände eines vertrauensvollen sowie kompetenten Teams ab!",
+    avatar: "/selectedWork/Rumold.png",
   },
 ];
 

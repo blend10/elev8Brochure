@@ -8,24 +8,48 @@ const portfolioData = [
     subtitle: "WEBSITE",
     projects: [
       {
-        title: "IMAS",
-        image: [{ src: "/1.png" }, { src: "/2.png" }, { src: "/3.png" }],
+        title: "Astec design",
+        image: [{ src: "/ph1.jpg" }, { src: "/ph2.png" }, { src: "/ph3.png" }],
       },
       {
-        title: "Navigas",
-        image: [{ src: "/4.png" }, { src: "/5.png" }, { src: "/6.png" }],
+        title: "Job.KrobertKochde",
+        image: [{ src: "/ph4.png" }, { src: "/ph5.png" }, { src: "/ph6.png" }],
       },
       {
-        title: "Raum",
-        image: [{ src: "/7.png" }, { src: "/8.png" }, { src: "/9.png" }],
+        title: "Josef Wchner",
+        image: [{ src: "/ph7.png" }, { src: "/ph8.png" }, { src: "/ph9.png" }],
       },
       {
-        title: "bELL",
-        image: [{ src: "/13.png" }, { src: "/14.png" }],
+        title: "Job.Rall Consulting GmbH  ",
+        image: [{ src: "/ph10.png" }, { src: "/ph11.png" } ,{ src: "/ph12.png" }],
       },
       {
-        title: "HIBIKE",
-        image: [{ src: "/15.png" }, { src: "/16.png" }, { src: "/17.png" }],
+        title: "EuroCarry",
+        image: [{ src: "/ph13.png" }, { src: "/ph14.png" }, { src: "/ph15.png" }],
+      },
+      {
+        title: "hibike",
+        image: [{ src: "/ph16.png" }, { src: "/ph17.png" }, { src: "/ph18.png" }],
+      },
+       {
+        title: "ventum",
+        image: [{ src: "/ph19.png" }, { src: "/ph20.png" }, { src: "/ph21.png" }],
+      },
+      {
+        title: "S-THETIC",
+        image: [{ src: "/ph22.png" }, { src: "/ph23.png" }, { src: "/ph24.png" }],
+      },
+       {
+        title: "Aesthetics care",
+        image: [{ src: "/ph25.png" }, { src: "/ph26.png" }, { src: "/ph27.png" }],
+      },
+       {
+        title: "SWIZZ.AI",
+        image: [{ src: "/ph28.png" }, { src: "/ph29.png" }, { src: "/ph30.png" }],
+      },
+      {
+        title: "ASSFALG",
+        image: [{ src: "/ph31.png" }, { src: "/ph32.png" }, { src: "/ph33.png" }],
       },
     ],
   },
@@ -35,20 +59,24 @@ const portfolioData = [
     projects: [
       {
         title: "Quitty",
-        image: [{ src: "/18.png" }, { src: "/19.png" }, { src: "/20.png" }],
+        image: [{ src: "/ph34.png" }, { src: "/ph35.png" }, { src: "/ph36.png" }],
       },
       {
         title: "MyFidro",
-        image: [{ src: "/21.png" }, { src: "/22.png" }, { src: "/23.png" }],
+        image: [{ src: "/ph37.png" }, { src: "/ph38.png" }, { src: "/ph39.png" }],
       },
       {
         title: "NETWRK",
-        image: [{ src: "/24.png" }, { src: "/25.png" }],
+        image: [{ src: "/ph40.png" }, { src: "/ph41.png" }],
       },
       {
         title: "TAPPLAYER",
-        image: [{ src: "/26.png" }, { src: "/27.png" }],
+        image: [{ src: "/ph42.png" }, { src: "/ph43.png" }],
       },
+      {
+        title: "kent",
+        image: [{ src: "/ph44.png" }, { src: "/ph45.png" } ,{ src: "/ph46.png" }],
+      },  
     ],
   },
   {
@@ -57,98 +85,36 @@ const portfolioData = [
     projects: [
       {
         title: "Quitty",
-        image: [{ src: "/28.png" }, { src: "/29.png" }, { src: "/30.png" }],
+        image: [{ src: "/ph47.png" }, { src: "/ph48.png" }, { src: "/ph49.png" }],
       },
       {
         title: "MyFidro",
-        image: [{ src: "/31.png" }, { src: "/32.png" }, { src: "/33.png" }],
+        image: [{ src: "/ph50.png" }, { src: "/ph51.png" }, { src: "/ph52.png" }],
       },
       {
         title: "Netwrk",
-        image: [{ src: "/34.png" }, { src: "/35.png" }, { src: "/36.png" }],
+        image: [{ src: "/ph53.png" }, { src: "/ph54.png" }, { src: "/ph55.png" }],
       },
       {
-        title: "Leonardo Türen",
-        image: [{ src: "/37.png" }, { src: "/38.png" }, { src: "/39.png" }],
+        title: "Sales Dashboard ",
+        image: [{ src: "/ph56.png" }, { src: "/ph57.png" }, { src: "/ph58.png" }],
       },
-      {
-        title: "KundenPortal",
-        image: [{ src: "/40.png" }, { src: "/41.png" }, { src: "/42.png" }],
-      },
-      {
-        title: "Sales",
-        image: [{ src: "/43.png" }, { src: "/44.png" }, { src: "/45.png" }],
-      },
-      {
-        title: "Refa Kanalreinigung",
-        image: [
-          { src: "/refaCrm1.png" },
-          { src: "/refaCrm2.png" },
-          { src: "/refaCrm3.png" },
-        ],
-      },
+      
     ],
   },
   {
     title: "E-Commerce",
     subtitle: "E-COMMERCE",
     projects: [
-      {
-        title: "Soxey",
-        image: [{ src: "/46.png" }, { src: "/47.png" }, { src: "/48.png" }],
-      },
-      {
-        title: "SPANDOKMAN",
-        image: [{ src: "/49.png" }, { src: "/50.png" }, { src: "/51.png" }],
-      },
+      
       {
         title: "FaceDrip",
-        image: [{ src: "/52.png" }, { src: "/53.png" }, { src: "/54.png" }],
+        image: [{ src: "/ph59.png" }, { src: "/ph60.png" }, { src: "/ph61.png" }],
       },
-      {
-        title: "Lune Cadeau",
-        image: [{ src: "/55.png" }, { src: "/56.png" }, { src: "/57.png" }],
-      },
-      {
-        title: "Remax Elife",
-        image: [{ src: "/58.png" }],
-      },
-      {
-        title: "Assfalg",
-        image: [{ src: "/59.png" }],
-      },
+      
     ],
   },
-  {
-    title: "Markenidentität",
-    subtitle: "Markenidentität",
-    projects: [
-      {
-        title: "Carrosserie Kägi",
-        image: [{ src: "/60.png" }, { src: "/61.png" }, { src: "/62.png" }],
-      },
-      {
-        title: "Prima Drive",
-        image: [{ src: "/63.png" }, { src: "/64.png" }, { src: "/65.png" }],
-      },
-      {
-        title: "Quitty",
-        image: [{ src: "/66.png" }, { src: "/67.png" }, { src: "/68.png" }],
-      },
-      {
-        title: "Facedrip",
-        image: [{ src: "/69.png" }, { src: "/70.png" }, { src: "/71.png" }],
-      },
-      {
-        title: "imas",
-        image: [{ src: "/72.png" }, { src: "/73.png" }, { src: "/74.png" }],
-      },
-      {
-        title: "WOLF SOLUTION AG",
-        image: [{ src: "/75.png" }, { src: "/76.png" }, { src: "/77.png" }],
-      },
-    ],
-  },
+
   {
     title: "Digitales Marketing",
     subtitle: "Digitales Marketing",
@@ -363,9 +329,9 @@ function SelectedWork() {
             text="Unser Portfolio — &nbsp;"
             fadeColor="#0E0E0E"
             textColor="#8D8D8D"
-            flowerIcon="/flower-grey.svg"
+            flowerIcon="/whiteFlower.svg"
           />
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-start w-full">
             <h2 className="font-impact lg:text-[100px] text-[44px] font-semibold text-white uppercase leading-none text-center lg:text-left">
               Ausgewählte
             </h2>

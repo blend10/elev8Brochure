@@ -54,7 +54,7 @@ function FAQ() {
                     {item.title}
                   </span>
                   <img
-                    src={isSelected ? "/minus.svg" : "/plus.svg"}
+                    src={isSelected ? "/selectedWork/minus.svg" : "/selectedWork/plus.svg"}
                     alt={isSelected ? "collapse" : "expand"}
                     className="w-[30px] h-[30px] shrink-0 ml-4"
                   />

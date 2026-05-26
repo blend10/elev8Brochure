@@ -1,22 +1,15 @@
 [
   {
-    "title": "1. Welche Arten von Dienstleistungen bieten Sie an?",
-    "answer": "Wir bieten ein breites Leistungsspektrum, darunter Branding, digitales Marketing, Webentwicklung, CRM-Lösungen und Marketingstrategien mit datenbasierten Insights. Unser Ziel ist es, Unternehmen dabei zu helfen, eine starke Online-Präsenz aufzubauen und nachhaltig zu wachsen."
+    "title": "1. Was passiert nach dem Absenden meiner Anfrage?",
+    "answer": "Innerhalb von 24 Stunden meldet sich jemand aus unserem Team persönlich bei Ihnen. Kein automatisiertes Follow-up, kein Sales-Funnel. Sie bestätigen einen Termin, wir bereiten uns vor, und im Gespräch gehen wir direkt zur Sache."
   },
   {
-    "title": "2. Wie kann ich ein Angebot anfordern?",
-    "answer": "Sie können ein Angebot oder einen Vorschlag anfordern, indem Sie uns über das Kontaktformular auf unserer Website oder direkt per E-Mail kontaktieren. Wir melden uns umgehend mit den gewünschten Informationen bei Ihnen."
+    "title": "2.Für wen ist das Erstgespräch geeignet?",
+    "answer": "Für Unternehmen mit einem gesetzten Marketingbudget, die wissen, dass mehr drin liegt und bereit sind, ihre aktuelle Strategie datenbasiert zu hinterfragen."
   },
   {
-    "title": "3. View lang dauert es in Regel, ein Projekt abzuchliessen?",
-    "answer": "Die Projektlaufzeiten variieren je nach Umfang und Komplexität. Nachdem wir Ihre Anforderungen verstanden haben, erstellen wir Ihnen einen auf Ihr Projekt zugeschnittenen geschätzten Zeitplan."
-  },
-  {
-    "title": "4. Wie lange dauert ein Projekt in der Regel?",
-    "answer": "Die Kosten richten sich nach den jeweiligen Leistungen und Projektanforderungen. Kontaktiere uns für ein individuelles Angebot, das auf deine Bedürfnisse zugeschnitten ist."
-  },
-  {
-    "title": "5. Können Sie meine bestehende Website neu gestalten?",
-    "answer": "Wir gestalten bestehende Websites neu, optimieren Design, Performance und UX und passen alles an Ihre Marken- und Geschäftsziele an."
+    "title": "3.Entstehen durch das Gespräch Kosten oder Verpflichtungen?",
+    "answer": "Nein. Das Gespräch ist kostenlos und unverbindlich. Sie erhalten eine datenbasierte Einschätzung Ihrer aktuellen Situation und konkrete nächste Schritte. Was Sie danach tun, liegt vollständig bei Ihnen."
   }
+  
 ]

@@ -3,9 +3,9 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: 15, suffix: "+", label: "Jahre Erfahrung" },
-  { value: 500, suffix: "+", label: "Abgeschlossene Projekte" },
-  { value: 250, suffix: "+", label: "Kunden weltweit" },
+  { value: 1200, suffix: "+", label: "Websites realisiert" },
+  { value: 800, suffix: "Mio.+", label: "Nutzer erreicht" },
+  { value: 98, suffix: "%", label: "Kundenzufriedenheitsrate" },
 ];
 
 const StatCounter = ({ stat }) => {
@@ -37,12 +37,16 @@ const AboutSection = () => {
         <div className="flex flex-col lg:flex-row gap-[58px]">
           {/* First div: Image (20% width) */}
           <div className="w-full xl:w-[30%] lg:w-[35%] rounded-[10px] overflow-hidden shrink-0 relative">
-            <img
-              src="/projects.png"
-              alt="Syntech Team Meeting"
-              draggable={false}
-              className="w-full h-full object-cover min-h-[300px] lg:min-h-full aspect-square lg:aspect-4/5 pointer-events-none select-none"
+            <video
+              src="/Mainvideo.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Elev8 Group – Showreel unserer digitalen Marketing-Projekte"
+              className="w-full h-full object-cover min-h-[300px] lg:min-h-full aspect-square lg:aspect-4/5"
             />
+            <div className="absolute inset-0 bg-[#0066D64D]" />
             <img
               src="/centerOfProjects.svg"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[200px]"
@@ -54,16 +58,14 @@ const AboutSection = () => {
           <div className="flex flex-col justify-between flex-1">
             {/* Top text aligned right */}
             <div className="mb-12 lg:mb-0">
-              <h2 className="font-inter font-semibold text-[24px] md:text-[20px] tracking-tight lg:text-[21px] xl:text-[30px] text-[#1E1E1E] text-left md:text-right">
-                Die Syntech Solution AG ist eine zukunftsorientierte <br />
-                Digitalagentur, die sich darauf spezialisiert hat, Marken beim
-                <br />
-                Wachstum und Erfolg im digitalen Bereich zu unterstützen.
+              <h2 className="text-center md:text-left font-inter font-semibold text-[24px] md:text-[20px] tracking-tight lg:text-[21px] xl:text-[30px] text-[#1E1E1E]">
+                Syntech Solution AG, SharkAgency & Bexolutions.
+Technologie, Marketing und Vertrieb unter einem Dach. Das Ergebnis ist die Elev8 Group. 
               </h2>
             </div>
 
             {/* Bottom stats divs justify-between */}
-            <div className="flex flex-col md:flex-row justify-between w-full gap-8 md:gap-4 mt-auto">
+            <div className="flex flex-col md:flex-row justify-between w-full gap-8 md:gap-10 mt-auto">
               {stats.map((stat, index) => (
                 <StatCounter key={index} stat={stat} />
               ))}

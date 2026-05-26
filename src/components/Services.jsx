@@ -4,7 +4,7 @@ import MarqueeBadge from "./MarqueeBadge";
 const servicesList = [
   {
     serviceName: "Webdesign & Entwicklung",
-    serviceImage: "/header1.png",
+    serviceImage: "/header.png",
     scrollToId: "portfolio-webdesign-entwicklung",
   },
   {
@@ -67,6 +67,9 @@ const ServiceRow = ({ service, index }) => {
     }
   };
 
+  const previewSrc = `/services/Service${index + 1}.${index + 1 === 2 || index + 1 === 8 ? "mp4" : "png"}`;
+  const isVideo = previewSrc.endsWith(".mp4");
+
   return (
     <div
       ref={rowRef}
@@ -99,11 +102,22 @@ const ServiceRow = ({ service, index }) => {
               ref={imageRef}
               className="w-[300px] h-[200px] rounded-[10px] overflow-hidden shadow-2xl transition-transform duration-75 ease-out"
             >
-              <img
-                src={`/services/${index + 1}.png`}
-                alt={service.serviceName}
-                className="w-full h-full object-cover"
-              />
+              {isVideo ? (
+                <video
+                  src={previewSrc}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <img
+                  src={previewSrc}
+                  alt={service.serviceName}
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -129,7 +143,7 @@ function Services() {
       </div>
       <div className="flex flex-col gap-10">
         <p className="font-poppins text-[32px] md:text-[48px] text-center lg:text-left font-semibold text-[#212121] uppercase">
-          DIenstleistungen
+          Dienstleistungen
         </p>
         <div className="flex flex-col w-full relative">
           {servicesList.map((service, index) => (

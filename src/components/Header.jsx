@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container">
         <div className="flex flex-col items-center gap-[28px]">
           <MarqueeBadge
-            text="DIgital Marketing Agentur — &nbsp;"
+            text="Digital Marketing Agentur — &nbsp;"
             maxWidth="max-w-[324px]"
           />
 
@@ -22,7 +22,7 @@ const Header = () => {
                   WebkitBackgroundClip: "text",
                 }}
               >
-                AUGE <br /> FÜR JEDES DETAIL.
+                AUGE <br /> FÜRS Detail.
               </span>
             </h1>
           </div>
@@ -35,7 +35,7 @@ const Header = () => {
             <div className="relative w-full h-full rounded-[20px] overflow-hidden shadow-lg z-10 border border-gray-100">
               <img
                 src="/header1.png"
-                alt={`Header image 1`}
+                alt="Elev8 Group – Digitale Marketing Agentur, Webdesign Referenz 1"
                 className="w-full h-full object-cover transition-transform duration-700 "
               />
             </div>
@@ -44,7 +44,7 @@ const Header = () => {
             <div className="relative w-full h-full rounded-[20px] overflow-hidden shadow-lg z-10 border border-gray-100">
               <img
                 src="/header2.png"
-                alt={`Header image 2`}
+                alt="Elev8 Group – Digitale Marketing Agentur, Webdesign Referenz 2"
                 className="w-full h-full object-cover transition-transform duration-700 "
               />
             </div>
@@ -52,8 +52,8 @@ const Header = () => {
           <div className="relative group rounded-[20px] overflow-visible transition-transform duration-500  w-[475px] h-[330px]">
             <div className="relative w-full h-full rounded-[20px] overflow-hidden shadow-lg z-10 border border-gray-100">
               <img
-                src="/header3Quality.png"
-                alt={`Header image 3`}
+                src="/header3.png"
+                alt="Elev8 Group – Digitale Marketing Agentur, Webdesign Referenz 3"
                 className="w-full h-full object-cover transition-transform duration-700 "
               />
             </div>
@@ -66,10 +66,7 @@ const Header = () => {
           {/* Object 4: Simple text */}
           <div className="text-center w-full max-w-4xl px-4 mt-8">
             <p className="font-poppins text-[#212121B2] text-[16px] leading-[1.6]">
-              Bei Syntech Solution AG entwickeln wir wirkungsvolle digitale
-              Strategien, moderne Designs und <br /> nahtlose Weblösungen, die
-              Marken in der heutigen schnelllebigen Welt auf ein neues Niveau
-              heben.
+              Elev8 - Digitale Sichtbarkeit, funktionierende Systeme und messbare Ergebnisse sind heute entscheidend für nachhaltigen Unternehmenserfolg. Unser Online-Marketing bringt Ihr Unternehmen auf die nächste Stufe.
             </p>
           </div>
         </div>
