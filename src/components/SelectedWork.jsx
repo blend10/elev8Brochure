@@ -202,6 +202,12 @@ const portfolioData = [
 
         videoSrc: "/200.mp4",
       },
+      {
+        title: "S-THETIC",
+        image: [{ src: "/ph67.png" }],
+
+        videoSrc: "/video2.mp4",
+      },
     ],
   },
 ];
