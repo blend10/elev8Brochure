@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company GmbH</title>
+    <meta
+      name="description"
+      content="Company GmbH - Ihr zuverlässiger Partner für strategische Unternehmensberatung, technische Unterstützung und Budgetberatung."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+      :root {
+        --teal-brand: #116466;
+        --teal-light: #D1E8E2;
+        --teal-muted: #E7F2EF;
+        --teal-soft: #DFEFEB;
+        --teal-accent: #2DA0A4;
+        --peach: #FFCB9A;
+        --peach-dark: #F5B070;
+        --dark-bg: #033132;
+        --dark-text: #161C2D;
+        --dark-gray: #454747;
+        --mint: #68D585;
+      }
+      .font-sans { font-family: 'Inter', sans-serif; }
+      .max-w-site { max-width: 1280px; }
+      .text-teal-brand { color: var(--teal-brand); }
+      .text-teal-light { color: var(--teal-light); }
+      .text-teal-muted { color: var(--teal-muted); }
+      .text-teal-soft { color: var(--teal-soft); }
+      .text-teal-accent { color: var(--teal-accent); }
+      .text-peach { color: var(--peach); }
+      .text-peach-dark { color: var(--peach-dark); }
+      .text-dark-text { color: var(--dark-text); }
+      .text-dark-gray { color: var(--dark-gray); }
+      .text-mint { color: var(--mint); }
+      .bg-teal-brand { background-color: var(--teal-brand); }
+      .bg-teal-light { background-color: var(--teal-light); }
+      .bg-teal-muted { background-color: var(--teal-muted); }
+      .bg-teal-soft { background-color: var(--teal-soft); }
+      .bg-teal-accent { background-color: var(--teal-accent); }
+      .bg-peach { background-color: var(--peach); }
+      .bg-dark-bg { background-color: var(--dark-bg); }
+      .bg-dark-text { background-color: var(--dark-text); }
+      .bg-mint { background-color: var(--mint); }
+      .border-teal-brand { border-color: var(--teal-brand); }
+      .border-teal-light { border-color: var(--teal-light); }
+      .border-teal-muted { border-color: var(--teal-muted); }
+      .border-teal-soft { border-color: var(--teal-soft); }
+      .hover\:text-peach:hover { color: var(--peach); }
+      .hover\:text-peach-dark:hover { color: var(--peach-dark); }
+      .focus\:border-teal-brand:focus { border-color: var(--teal-brand); }
+      .focus\:ring-peach:focus { --tw-ring-color: var(--peach); }
+      /* Opacity variants */
+      .bg-mint\/10 { background-color: color-mix(in srgb, var(--mint) 10%, transparent); }
+      .border-teal-brand\/40 { border-color: color-mix(in srgb, var(--teal-brand) 40%, transparent); }
+      .text-teal-light\/70 { color: color-mix(in srgb, var(--teal-light) 70%, transparent); }
+      .text-teal-light\/90 { color: color-mix(in srgb, var(--teal-light) 90%, transparent); }
+      .text-dark-text\/70 { color: color-mix(in srgb, var(--dark-text) 70%, transparent); }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes floatY {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes slideShape {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      @keyframes countFade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes light {
+        0% {
+          background-color: #00000070;
+        }
+        100% {
+          background-color: #00000015;
+        }
+      }
+      @keyframes rowAppear {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .anim-fade {
+        animation: fadeInUp 0.8s ease both;
+      }
+      .anim-fade-d1 {
+        animation: fadeInUp 0.8s ease 0.2s both;
+      }
+      .anim-fade-d2 {
+        animation: fadeInUp 0.8s ease 0.4s both;
+      }
+      .anim-fade-d3 {
+        animation: fadeInUp 0.8s ease 0.6s both;
+      }
+      .anim-float {
+        animation: floatY 3s ease-in-out infinite;
+      }
+      .anim-light {
+        animation: light 3s ease-in-out infinite alternate;
+      }
+      .process-row {
+        opacity: 0;
+      }
+      .process-row.visible {
+        animation: rowAppear 0.6s ease both;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.4s ease,
+          padding 0.3s ease;
+      }
+      .accordion-content.open {
+        max-height: 300px;
+        padding-top: 8px;
+      }
+      .btn-primary {
+        background-color: #ffcb9a;
+        color: #116466;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .btn-primary:hover {
+        background-color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+      .btn-icon {
+        background-color: #ffcb9a;
+        color: #116466;
+        border: none;
+        border-radius: 12px;
+        width: 52px;
+        height: 52px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+      .btn-icon:hover {
+        background-color: #fff;
+        transform: translateY(-2px);
+      }
+      .card-service {
+        background-color: #116466;
+        border-radius: 2.5rem;
+        padding: 2rem;
+        width: 100%;
+        max-width: 270px;
+        min-height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+      .card-service:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(17, 100, 102, 0.3);
+      }
+      #mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+      #mobile-menu.open {
+        max-height: 300px;
+      }
+    </style>
+  </head>
+  <body class="font-sans m-0 overflow-x-hidden bg-white text-dark-text">
+    <!-- ========== HERO ========== -->
+    <section id="home" class="relative h-screen bg-black/40">
+      <img
+        src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/templateBg1.png"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+
+      <!-- Navbar -->
+      <nav class="relative z-20">
+        <div
+          class="max-w-site mx-auto w-full flex justify-between items-center px-4 pt-6"
+        >
+          <img
+            src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/logoipsum-387.svg"
+            alt=" Logo"
+            class="h-8 md:h-10"
+          />
+
+          <!-- Desktop Nav -->
+          <div class="hidden lg:flex items-center gap-8">
+            <a
+              href="#services"
+              class="text-teal-light text-sm font-medium hover:text-peach transition-colors"
+              >Dienstleistungen</a
+            >
+            <a
+              href="#about"
+              class="text-teal-light text-sm font-medium hover:text-peach transition-colors"
+              >Über uns</a
+            >
+            <a
+              href="#process"
+              class="text-teal-light text-sm font-medium hover:text-peach transition-colors"
+              >Prozess</a
+            >
+            <a
+              href="#contact"
+              class="text-teal-light text-sm font-medium hover:text-peach transition-colors"
+              >Kontakt</a
+            >
+            <div class="flex gap-1">
+              <button
+                onclick="
+                  window.open(
+                    'https://calendly.com/app/routing/forms/240229/edit/fields',
+                  )
+                "
+                class="btn-primary text-sm py-3 px-5"
+              >
+                Lass uns reden.
+              </button>
+              <button class="btn-icon w-12 h-12 text-sm">→</button>
+            </div>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="hamburger"
+            class="lg:hidden flex flex-col gap-1.5 p-2"
+            onclick="
+              document.getElementById('mobile-menu').classList.toggle('open')
+            "
+          >
+            <span class="block w-7 h-0.5 bg-white rounded"></span>
+            <span class="block w-7 h-0.5 bg-white rounded"></span>
+            <span class="block w-5 h-0.5 bg-white rounded"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="lg:hidden bg-white/95 backdrop-blur-md mx-4 mt-2 rounded-2xl shadow-xl"
+        >
+          <a
+            href="#services"
+            onclick="
+              document.getElementById('mobile-menu').classList.remove('open')
+            "
+            class="block px-6 py-3 text-teal-brand font-medium border-b border-gray-100 hover:text-peach transition-colors"
+            >Dienstleistungen</a
+          >
+          <a
+            href="#about"
+            onclick="
+              document.getElementById('mobile-menu').classList.remove('open')
+            "
+            class="block px-6 py-3 text-teal-brand font-medium border-b border-gray-100 hover:text-peach transition-colors"
+            >Über uns</a
+          >
+          <a
+            href="#process"
+            onclick="
+              document.getElementById('mobile-menu').classList.remove('open')
+            "
+            class="block px-6 py-3 text-teal-brand font-medium border-b border-gray-100 hover:text-peach transition-colors"
+            >Prozess</a
+          >
+          <a
+            href="#contact"
+            onclick="
+              document.getElementById('mobile-menu').classList.remove('open')
+            "
+            class="block px-6 py-3 text-teal-brand font-medium hover:text-peach transition-colors"
+            >Kontakt</a
+          >
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 max-w-site mx-auto px-4 mt-20 md:mt-36 lg:mt-44"
+      >
+        <h1
+          class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-teal-light leading-tight max-w-3xl anim-fade"
+        >
+          Ihr zuverlässiger Partner
+        </h1>
+        <p
+          class="text-teal-light/90 text-base md:text-lg leading-relaxed max-w-lg mt-4 anim-fade-d1"
+        >
+          Wir sind entschlossen, spezialisierte Dienstleistungen anzubieten, die
+          den Erfolg im digitalen Zeitalter vorantreiben.
+        </p>
+        <form
+          class="flex flex-col sm:flex-row gap-2 mt-6 anim-fade-d2"
+          onsubmit="event.preventDefault()"
+        >
+          <input
+            type="email"
+            placeholder="Geben Sie Ihre E-Mail-Adresse ein."
+            class="flex-1 max-w-sm px-6 py-4 bg-teal-light rounded-xl text-dark-gray placeholder:text-dark-gray/60 text-sm focus:outline-none focus:ring-2 focus:ring-peach"
+          />
+          <button type="submit" class="btn-primary py-4 px-6">
+            Lass uns reden
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ========== PARTNER / SERVICES ========== -->
+    <section id="services" class="py-16 md:py-24 relative overflow-hidden">
+      <div class="max-w-site mx-auto px-4 relative">
+        <!-- Main Title -->
+        <div class="anim-fade">
+          <h2
+            class="text-teal-brand font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight max-w-4xl"
+          >
+            Arbeiten Sie mit uns zusammen, um das volle Potenzial Ihres KMUs
+            freizuschalten.
+          </h2>
+          <p
+            class="text-dark-gray text-sm md:text-base leading-relaxed max-w-3xl mt-4"
+          >
+            Als Unternehmer, Marketingstratege und angesehene Persönlichkeit
+            sowohl in den Bereichen Marketing als auch IT, gilt Name als
+            Vorreiter bei der Umwandlung von KMUs in Erfolgsgeschichten.
+          </p>
+        </div>
+
+        <!-- Two-column: Text + Cards -->
+        <div class="flex flex-col lg:flex-row gap-12 mt-12">
+          <!-- Left Text -->
+          <div class="lg:w-2/5 anim-fade-d1">
+            <p class="text-dark-gray text-sm leading-7">
+              Unter Name dynamischer Führung haben wir uns darauf spezialisiert,
+              KMUs in blühende Unternehmen zu verwandeln. Unsere
+              massgeschneiderten Lösungen integrieren innovative
+              Marketingansätze nahtlos mit modernster Beratung.
+            </p>
+            <h3 class="text-teal-brand font-medium text-base mt-6 leading-7">
+              Name – <br />
+              Wo Vision auf Innovation trifft!
+            </h3>
+            <a
+              href="#contact"
+              class="inline-flex items-center gap-2 text-teal-brand font-semibold mt-8 hover:text-peach-dark transition-colors group"
+            >
+              Kostenlose Beratung erhalten
+              <span class="group-hover:translate-x-1 transition-transform"
+                >→</span
+              >
+            </a>
+          </div>
+
+          <!-- Right: Service Cards -->
+          <div
+            class="lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            <div class="card-service anim-fade-d1">
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/puzzle1.svg"
+                alt=""
+                class="w-12 h-12"
+              />
+              <h3
+                class="text-teal-light text-lg font-medium leading-snug mt-auto"
+              >
+                Strategische Unternehmens-<br />beratung
+              </h3>
+            </div>
+            <div class="card-service anim-fade-d2">
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/puzzle2.svg"
+                alt=""
+                class="w-12 h-12"
+              />
+              <h3
+                class="text-teal-light text-lg font-medium leading-snug mt-auto"
+              >
+                Technische Unterstützung
+              </h3>
+            </div>
+            <div class="card-service anim-fade-d3">
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/puzzle3.svg"
+                alt=""
+                class="w-12 h-12"
+              />
+              <h3
+                class="text-teal-light text-lg font-medium leading-snug mt-auto"
+              >
+                Budgetberatung
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ROADMAP / ABOUT ========== -->
+    <section id="about" class="py-16 md:py-24">
+      <div
+        class="max-w-site mx-auto px-4 flex flex-col lg:flex-row gap-12 items-center"
+      >
+        <!-- Left: Icon Cloud + Image -->
+        <div class="lg:w-1/2 flex flex-col items-center gap-8">
+          <div
+            class="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center"
+          >
+            <!-- Floating icons -->
+            <div
+              class="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn1.svg"
+                alt=""
+                class="w-8 h-8"
+              />
+            </div>
+            <div
+              class="absolute top-20 left-4 w-14 h-14 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 0.5s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn2.svg"
+                alt=""
+                class="w-7 h-7"
+              />
+            </div>
+            <div
+              class="absolute top-16 right-4 w-14 h-14 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 0.75s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn3.svg"
+                alt=""
+                class="w-7 h-7"
+              />
+            </div>
+            <div
+              class="absolute bottom-16 left-4 w-16 h-16 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 1s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn4.svg"
+                alt=""
+                class="w-8 h-8"
+              />
+            </div>
+            <div
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 1.25s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn5.svg"
+                alt=""
+                class="w-7 h-7"
+              />
+            </div>
+            <div
+              class="absolute bottom-16 right-4 w-14 h-14 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 1.5s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn6.svg"
+                alt=""
+                class="w-7 h-7"
+              />
+            </div>
+            <div
+              class="absolute top-1/2 right-4 -translate-y-1/2 w-14 h-14 bg-teal-brand rounded-lg flex items-center justify-center shadow-lg anim-float"
+              style="animation-delay: 0.8s"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/iconn7.svg"
+                alt=""
+                class="w-7 h-7"
+              />
+            </div>
+            <!-- Center photo -->
+            <img
+              src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/Chief-Executive-Officer-Flat-Icon-Graphics-14440092-1.jpg"
+              alt="Name"
+              class="w-40 h-40 md:w-52 md:h-52 rounded-xl object-cover shadow-2xl relative z-10"
+            />
+            <div
+              class="absolute bottom-8 right-16 w-40 h-32 bg-mint/10 rounded-xl -z-0"
+            ></div>
+          </div>
+          <p class="text-teal-brand text-sm text-center leading-7 max-w-md">
+            Begib dich mit uns auf deine Start-up-Reise – wo Qualität auf
+            Quantität trifft, Geschwindigkeit den Erfolg definiert und
+            vielfältige Erfahrungen deinen Weg zum Wachstum formen.
+          </p>
+        </div>
+
+        <!-- Right: Accordion -->
+        <div class="lg:w-1/2">
+          <p class="text-peach font-semibold text-xs tracking-widest uppercase">
+            JETZT ERKUNDEN
+          </p>
+          <h2 class="text-teal-brand font-bold text-3xl md:text-5xl mt-2">
+            Weg zum Erfolg
+          </h2>
+          <p class="text-dark-text/70 text-sm md:text-base leading-7 mt-4">
+            Bei der Compa GmbH erkennen wir die Bedeutung von kleinen und
+            mittelständischen Unternehmen (KMUs) für das Wirtschaftswachstum.
+            Unsere Mission ist es, diese Unternehmen zu stärken.
+          </p>
+
+          <div class="mt-8 space-y-3" id="accordion">
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-teal-brand font-medium text-sm md:text-base list-disc"
+                  >◦ Aufbau und Wachstum von Startups</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Company ist der Kompass des Startups, der sie von der Idee zum
+                  Erfolg führt. Mit massgeschneiderten Ratschlägen und
+                  strategischer Unterstützung verwandeln sie Visionen in
+                  blühende Unternehmen.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ Kundenbindung: Verbinden und Erfolg haben</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Binden Sie Ihre Zielgruppe effektiv ein durch unsere
+                  kundenorientierten Funktionen. Fördern Sie bedeutungsvolle
+                  Verbindungen und eine ansprechende Online-Präsenz.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ Lead-Generierung auf jeder Plattform</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Maximieren Sie Ihre Reichweite mit unseren
+                  Lead-Generierungsfähigkeiten auf verschiedenen Plattformen.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ Unternehmensberatung</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Erhalten Sie Expertenrat und strategische Einblicke von
+                  erfahrenen Unternehmensberatern.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ E-Commerce</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Steigern Sie Ihr Online-Geschäft mit
+                  Experten-E-Commerce-Beratung und massgeschneiderten Lösungen.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item border-b border-teal-soft pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ Verkaufstechniken</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Entfesseln Sie leistungsstarke Verkaufsstrategien und
+                  verbessern Sie Ihren Ansatz mit unserem Verkaufstechniken-Hub.
+                </p>
+              </div>
+            </div>
+            <div
+              class="accordion-item pb-3 cursor-pointer"
+              onclick="toggleAccordion(this)"
+            >
+              <div class="flex justify-between items-center">
+                <span class="text-teal-brand font-medium text-sm md:text-base"
+                  >◦ Workshops mit erfahrenen Experten</span
+                >
+                <img
+                  src="../Downloads/New folder/New folder/images/Stroke 1.svg"
+                  alt=""
+                  class="w-4 h-4 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="accordion-content text-dark-text/70 text-sm leading-7"
+              >
+                <p>
+                  Entdecken Sie vielfältige Branchen in unseren von Experten
+                  geleiteten Workshops. Melden Sie sich jetzt an!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TRIAD ========== -->
+    <section
+      class="relative flex items-center min-h-[500px] md:min-h-[800px] anim-light"
+    >
+      <!-- Background image -->
+      <img
+        src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/c3bef344eb989036a8e85d0ea321bacc2730c31b.jpg"
+        alt="Background"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <div class="max-w-site w-full mx-auto px-4 relative z-10 py-16 md:py-24">
+        <p class="text-peach text-xs font-semibold tracking-widest uppercase">
+          DIE DREI Q'S
+        </p>
+        <h2
+          class="text-white font-bold text-2xl md:text-4xl lg:text-5xl leading-tight max-w-2xl mt-3"
+        >
+          Die Triade von Qualität, Quantität und Quellhaftigkeit
+        </h2>
+        <div class="flex flex-wrap gap-4 md:gap-12 mt-8">
+          <button
+            onclick="showTab('quality')"
+            class="bg-transparent border-none text-white text-base md:text-lg font-medium cursor-pointer"
+            id="tab-quality"
+            style="opacity: 1"
+          >
+            Qualität
+          </button>
+          <button
+            onclick="showTab('quantity')"
+            class="bg-transparent border-none text-white text-base md:text-lg font-medium cursor-pointer"
+            id="tab-quantity"
+            style="opacity: 0.5"
+          >
+            Quantität
+          </button>
+          <button
+            onclick="showTab('quickness')"
+            class="bg-transparent border-none text-white text-base md:text-lg font-medium cursor-pointer"
+            id="tab-quickness"
+            style="opacity: 0.5"
+          >
+            Quellhaftigkeit
+          </button>
+        </div>
+        <p
+          id="triad-content"
+          class="text-white text-sm leading-7 max-w-xl mt-6"
+        >
+          Eleviere deine Start-up-Reise. Tauche ein in eine Plattform, die
+          speziell für Startups entwickelt wurde.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== STATS ========== -->
+    <section class="py-16">
+      <div
+        class="max-w-site mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-10"
+      >
+        <div class="flex items-center gap-3 values-item">
+          <span
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-peach leading-none"
+            data-target="10"
+            >0</span
+          >
+          <span class="text-dark-text font-semibold text-sm"
+            >Jahre<br />Erfahrung</span
+          >
+        </div>
+        <div class="flex items-center gap-3 values-item">
+          <span
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-peach leading-none"
+            data-target="70"
+            >0</span
+          >
+          <span class="text-dark-text font-semibold text-sm"
+            >Unternehmen beim<br />Wachstum unterstützt</span
+          >
+        </div>
+        <div class="flex items-center gap-3 values-item">
+          <span
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-peach leading-none"
+            data-target="300"
+            >0</span
+          >
+          <span class="text-dark-text font-semibold text-sm"
+            >Projekte<br />weltweit</span
+          >
+        </div>
+      </div>
+      <hr class="border-none h-0.5 bg-teal-soft max-w-site mx-auto mt-10" />
+    </section>
+
+    <!-- ========== PROCESS ========== -->
+    <section id="process" class="py-16 md:py-24 relative overflow-hidden">
+      <div class="text-center">
+        <p class="text-peach text-xs font-semibold tracking-widest uppercase">
+          JETZT ENTDECKEN
+        </p>
+        <h2
+          class="text-teal-brand font-bold text-2xl md:text-4xl lg:text-5xl mt-2"
+        >
+          Prozess: Wie es funktioniert
+        </h2>
+      </div>
+      <div class="max-w-site mx-auto px-4 mt-12 space-y-6">
+        <div class="process-row flex items-center gap-4">
+          <div
+            class="flex items-center gap-6 bg-teal-light rounded-[2.5rem] p-6 md:p-8 flex-1 max-w-3xl"
+          >
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-brand flex items-center justify-center flex-shrink-0 shadow-lg"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/step1.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <h3 class="text-dark-text font-bold text-base md:text-lg">
+                Kontakt/Registrierung
+              </h3>
+              <p class="text-dark-text text-sm mt-1">
+                Beginnen Sie, indem Sie uns kontaktieren oder sich registrieren.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="process-row flex items-center gap-4 md:justify-center">
+          <div
+            class="flex items-center gap-6 bg-teal-soft rounded-[2.5rem] p-6 md:p-8 flex-1 max-w-3xl"
+          >
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-brand flex items-center justify-center flex-shrink-0 shadow-lg"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/step2.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <h3 class="text-dark-text font-bold text-base md:text-lg">
+                30-min kostenlose Beratung
+              </h3>
+              <p class="text-dark-text text-sm mt-1">
+                Eine kostenlose 30-minütige Beratungssitzung.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="process-row flex items-center gap-4 md:justify-end">
+          <div
+            class="flex items-center gap-6 bg-teal-light rounded-[2.5rem] p-6 md:p-8 flex-1 max-w-3xl"
+          >
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-brand flex items-center justify-center flex-shrink-0 shadow-lg"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/step3.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <h3 class="text-dark-text font-bold text-base md:text-lg">
+                Strategie
+              </h3>
+              <p class="text-dark-text text-sm mt-1">
+                Massgeschneiderte Strategie für Ihre Anforderungen.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="process-row flex items-center gap-4 md:justify-end">
+          <div
+            class="flex items-center gap-6 bg-teal-soft rounded-[2.5rem] p-6 md:p-8 flex-1 max-w-3xl"
+          >
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-brand flex items-center justify-center flex-shrink-0 shadow-lg"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/step4.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <h3 class="text-dark-text font-bold text-base md:text-lg">
+                Engagement
+              </h3>
+              <p class="text-dark-text text-sm mt-1">
+                Aktiv am Prozess teilnehmen und Feedback geben.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="process-row flex items-center gap-4 md:justify-center">
+          <div
+            class="flex items-center gap-6 bg-teal-light rounded-[2.5rem] p-6 md:p-8 flex-1 max-w-3xl"
+          >
+            <div
+              class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-teal-brand flex items-center justify-center flex-shrink-0 shadow-lg"
+            >
+              <img
+                src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/step5.svg"
+                alt=""
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <h3 class="text-dark-text font-bold text-base md:text-lg">
+                Erfolgsfeier
+              </h3>
+              <p class="text-dark-text text-sm mt-1">
+                Meilensteine und Erfolge feiern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="bg-teal-muted py-16 md:py-20">
+      <div class="max-w-site mx-auto px-4 text-center">
+        <h2 class="text-teal-brand font-bold text-2xl md:text-4xl">
+          Testimonials
+        </h2>
+        <div class="flex items-center justify-center gap-4 md:gap-8 mt-10">
+          <button
+            onclick="changeSlide(-1)"
+            class="btn-icon w-12 h-12 flex-shrink-0"
+          >
+            &#8592;
+          </button>
+          <div
+            class="max-w-3xl relative min-h-[280px] flex items-center"
+            id="slider"
+          >
+            <div class="slide">
+              <p
+                class="text-dark-text text-sm md:text-base leading-7 text-center"
+              >
+                "Honestly one of the best decisions we made this year. The team
+                was professional, fast, and incredibly easy to work with from
+                day one."
+              </p>
+              <div class="flex flex-col items-center mt-6">
+                <img
+                  src="https://i.pravatar.cc/150?img=11"
+                  alt="Jordan M."
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <h4 class="text-dark-text font-semibold text-sm mt-2">
+                  Jordan M.
+                </h4>
+                <p class="text-dark-text/70 text-xs">CEO, NovaBridge</p>
+              </div>
+            </div>
+
+            <div class="slide hidden">
+              <p
+                class="text-dark-text text-sm md:text-base leading-7 text-center"
+              >
+                "The results exceeded our expectations. Our conversion rate
+                jumped significantly within just the first two weeks of launch."
+              </p>
+              <div class="flex flex-col items-center mt-6">
+                <img
+                  src="https://i.pravatar.cc/150?img=32"
+                  alt="Sofia R."
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <h4 class="text-dark-text font-semibold text-sm mt-2">
+                  Sofia R.
+                </h4>
+                <p class="text-dark-text/70 text-xs">Founder, Loopline</p>
+              </div>
+            </div>
+
+            <div class="slide hidden">
+              <p
+                class="text-dark-text text-sm md:text-base leading-7 text-center"
+              >
+                "A truly remarkable experience. They understood our vision
+                immediately and delivered something even better than we
+                imagined."
+              </p>
+              <div class="flex flex-col items-center mt-6">
+                <img
+                  src="https://i.pravatar.cc/150?img=47"
+                  alt="Marcus T."
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <h4 class="text-dark-text font-semibold text-sm mt-2">
+                  Marcus T.
+                </h4>
+                <p class="text-dark-text/70 text-xs">CTO, Stackwell</p>
+              </div>
+            </div>
+
+            <div class="slide hidden">
+              <p
+                class="text-dark-text text-sm md:text-base leading-7 text-center"
+              >
+                "From strategy to execution, everything was seamless. We finally
+                have a product we're proud to show off to our customers."
+              </p>
+              <div class="flex flex-col items-center mt-6">
+                <img
+                  src="https://i.pravatar.cc/150?img=58"
+                  alt="Priya N."
+                  class="w-14 h-14 rounded-full object-cover"
+                />
+                <h4 class="text-dark-text font-semibold text-sm mt-2">
+                  Priya N.
+                </h4>
+                <p class="text-dark-text/70 text-xs">
+                  Head of Product, Driftly
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            onclick="changeSlide(1)"
+            class="btn-icon w-12 h-12 flex-shrink-0"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="relative flex items-center min-h-[650px]">
+      <!-- Background Image -->
+      <img
+        src="https://zunaoeugumoafbmyaogu.supabase.co/storage/v1/object/public/Template-Images/templateImages/h1-img-13%202.png"
+        alt="Contact background"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+      />
+
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div
+        class="max-w-site mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center gap-12 py-16"
+      >
+        <div class="lg:w-1/2 text-white">
+          <!-- Chat Icon SVG -->
+          <svg
+            class="w-12 h-12 mb-4"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M44 6H4C2.9 6 2 6.9 2 8V34C2 35.1 2.9 36 4 36H14V44L26 36H44C45.1 36 46 35.1 46 34V8C46 6.9 45.1 6 44 6Z"
+              fill="white"
+              fill-opacity="0.85"
+            />
+            <circle cx="15" cy="21" r="2.5" fill="#2d9e8f" />
+            <circle cx="24" cy="21" r="2.5" fill="#2d9e8f" />
+            <circle cx="33" cy="21" r="2.5" fill="#2d9e8f" />
+          </svg>
+
+          <h2
+            class="text-2xl md:text-4xl font-bold leading-tight tracking-wide"
+          >
+            Erhalten Sie jetzt eine kostenlose Beratung!
+          </h2>
+          <p class="text-white/65 text-sm md:text-base leading-7 mt-4">
+            Sichern Sie Ihre kostenlose Beratung mit unseren erfahrenen
+            Experten.
+          </p>
+
+          <div class="flex flex-wrap gap-6 mt-6">
+            <!-- Phone -->
+            <a
+              href="tel:+41791234567"
+              class="text-white text-sm flex items-center gap-2 hover:text-peach transition-colors"
+            >
+              <svg
+                class="w-5 h-5 flex-shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.1 14.5C14.3 14.3 14.7 14.2 14.9 14.4C15.8 14.7 16.8 14.9 17.8 14.9C18.4 14.9 18.9 15.4 18.9 16V18.8C18.9 19.4 18.4 19.9 17.8 19.9C9.6 19.9 3 13.3 3 5.1C3 4.5 3.5 4 4.1 4H6.9C7.5 4 8 4.5 8 5.1C8 6.1 8.2 7.1 8.5 8C8.6 8.3 8.5 8.7 8.3 8.9L6.6 10.8Z"
+                  fill="white"
+                />
+              </svg>
+              +41 (0) 79 123 45 67
+            </a>
+
+            <!-- Email -->
+            <a
+              href="mailto:hello@swizz.ch"
+              class="text-white text-sm flex items-center gap-2 hover:text-peach transition-colors"
+            >
+              <svg
+                class="w-5 h-5 flex-shrink-0"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                  fill="white"
+                />
+              </svg>
+              hello@swizz.ch
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div
+          class="lg:w-5/12 bg-white rounded-[2.5rem] p-8 md:p-10 shadow-2xl w-full max-w-md"
+        >
+          <form class="flex flex-col gap-5" onsubmit="event.preventDefault()">
+            <div class="flex flex-col gap-2">
+              <label class="text-dark-text text-sm font-medium">Name</label>
+              <input
+                type="text"
+                placeholder="i.e. Jan Muster"
+                class="w-full px-4 py-3 border border-teal-muted rounded-xl text-sm focus:outline-none focus:border-teal-brand transition-colors"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-dark-text text-sm font-medium">Email</label>
+              <input
+                type="email"
+                placeholder="i.e. janmuster@mail.com"
+                class="w-full px-4 py-3 border border-teal-muted rounded-xl text-sm focus:outline-none focus:border-teal-brand transition-colors"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label class="text-dark-text text-sm font-medium">Telefon</label>
+              <input
+                type="tel"
+                placeholder="i.e. 123-456-7890"
+                class="w-full px-4 py-3 border border-teal-muted rounded-xl text-sm focus:outline-none focus:border-teal-brand transition-colors"
+              />
+            </div>
+            <div class="flex gap-1 mt-2">
+              <button
+                type="submit"
+                class="btn-primary flex-1 justify-center py-4"
+              >
+                Kostenlose Beratung
+              </button>
+              <button type="submit" class="btn-icon w-14 h-14">&#8594;</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-dark-bg text-teal-light">
+      <div class="max-w-site mx-auto px-4 pt-12">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-6 pb-10"
+        >
+          <h3
+            class="text-teal-light font-semibold text-lg md:text-2xl leading-snug tracking-wide max-w-xl"
+          >
+            Abonnieren Sie unseren Newsletter.
+          </h3>
+          <form
+            class="flex gap-1 w-full max-w-md"
+            onsubmit="event.preventDefault()"
+          >
+            <input
+              type="email"
+              placeholder="Ihre E-Mail-Adresse"
+              class="flex-1 px-5 py-3.5 bg-teal-muted rounded-xl text-dark-text text-sm placeholder:text-dark-text/60 focus:outline-none"
+            />
+            <button type="submit" class="btn-primary py-3.5 px-6 text-sm">
+              Abonnieren
+            </button>
+          </form>
+        </div>
+
+        <hr class="border-none h-px bg-teal-brand/40" />
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12">
+          <!-- Firma -->
+          <div>
+            <h4 class="text-teal-light/70 text-sm font-medium mb-4">Firma</h4>
+            <div class="space-y-2">
+              <a
+                href="#about"
+                class="block text-teal-light/90 text-sm hover:text-peach transition-colors"
+                >Über uns</a
+              >
+              <a
+                href="#services"
+                class="block text-teal-light/90 text-sm hover:text-peach transition-colors"
+                >Dienstleistungen</a
+              >
+              <a
+                href="#process"
+                class="block text-teal-light/90 text-sm hover:text-peach transition-colors"
+                >Prozess</a
+              >
+            </div>
+          </div>
+
+          <!-- Dienstleistungen -->
+          <div>
+            <h4 class="text-teal-light/70 text-sm font-medium mb-4">
+              Dienstleistungen
+            </h4>
+            <div class="space-y-2 text-teal-light/90 text-sm">
+              <p>Start-up Programm</p>
+              <p>Kundenbindung</p>
+              <p>Lead-Generierung</p>
+              <p>E-Commerce</p>
+              <p>Verkaufstechniken</p>
+            </div>
+          </div>
+
+          <!-- Rechtliches -->
+          <div>
+            <h4 class="text-teal-light/70 text-sm font-medium mb-4">
+              Rechtliches
+            </h4>
+            <div class="space-y-2 text-teal-light/90 text-sm">
+              <p>Datenschutzrichtlinie</p>
+              <p>AGB</p>
+              <p>Rückgaberichtlinie</p>
+            </div>
+          </div>
+
+          <!-- Kontakt -->
+          <div>
+            <h4 class="text-teal-light/70 text-sm font-medium mb-4">Kontakt</h4>
+            <div class="space-y-3 text-teal-light/90 text-sm">
+              <a
+                href="mailto:hello@swizz.ch"
+                class="flex items-center gap-2 hover:text-peach transition-colors"
+              >
+                <!-- Email Icon -->
+                <svg
+                  class="w-4 h-4 flex-shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                hello@swizz.ch
+              </a>
+              <a
+                href="tel:+41791234567"
+                class="flex items-center gap-2 hover:text-peach transition-colors"
+              >
+                <!-- Phone Icon -->
+                <svg
+                  class="w-4 h-4 flex-shrink-0"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.1 14.5C14.3 14.3 14.7 14.2 14.9 14.4C15.8 14.7 16.8 14.9 17.8 14.9C18.4 14.9 18.9 15.4 18.9 16V18.8C18.9 19.4 18.4 19.9 17.8 19.9C9.6 19.9 3 13.3 3 5.1C3 4.5 3.5 4 4.1 4H6.9C7.5 4 8 4.5 8 5.1C8 6.1 8.2 7.1 8.5 8C8.6 8.3 8.5 8.7 8.3 8.9L6.6 10.8Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                +41 (0) 79 123 45 67
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="border-t border-teal-brand/40 py-5 flex flex-col sm:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-teal-light/70 text-xs">
+            Alle Rechte vorbehalten © 2025
+          </p>
+          <div class="flex items-center gap-4">
+            <!-- X / Twitter -->
+            <a
+              href="https://twitter.com"
+              class="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com"
+              class="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.326 3.608 1.301.975.975 1.24 2.242 1.301 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.326 2.633-1.301 3.608-.975.975-2.242 1.24-3.608 1.301-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.326-3.608-1.301-.975-.975-1.24-2.242-1.301-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.326-2.633 1.301-3.608C4.509 2.489 5.776 2.225 7.142 2.163 8.408 2.105 8.788 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.986 15.668 24 15.259 24 12c0-3.259-.014-3.668-.072-4.948-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
+                />
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com"
+              class="opacity-70 hover:opacity-100 transition-opacity"
+            >
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846 13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711 19.782 8.711 20.448 11.081 20.448 14.166V20.452ZM5.337 7.433A2.062 2.062 0 1 1 5.338 3.31a2.062 2.062 0 0 1-.001 4.123ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729V22.271C0 23.227.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleAccordion(item) {
+        const content = item.querySelector(".accordion-content");
+        const arrow = item.querySelector("img");
+        document.querySelectorAll(".accordion-item").forEach((i) => {
+          if (i !== item) {
+            i.querySelector(".accordion-content").classList.remove("open");
+            const a = i.querySelector("img");
+            if (a) a.style.transform = "rotate(0deg)";
+          }
+        });
+        content.classList.toggle("open");
+        if (arrow)
+          arrow.style.transform = content.classList.contains("open")
+            ? "rotate(180deg)"
+            : "rotate(0deg)";
+      }
+      function showTab(tab) {
+        const tabs = {
+          quality: "tab-quality",
+          quantity: "tab-quantity",
+          quickness: "tab-quickness",
+        };
+        const texts = {
+          quality:
+            "Eleviere deine Start-up-Reise. Tauche ein in eine Plattform, die speziell für Startups entwickelt wurde.",
+          quantity:
+            "Entdecke eine Vielzahl von Ressourcen und Lösungen, die für Startups in jeder Phase entwickelt wurden.",
+          quickness:
+            "In der dynamischen Welt der Startups ist Zeit von entscheidender Bedeutung. Navigiere schnell durch unsere Plattform.",
+        };
+        Object.keys(tabs).forEach((k) => {
+          document.getElementById(tabs[k]).style.opacity =
+            k === tab ? "1" : "0.5";
+        });
+        document.getElementById("triad-content").textContent = texts[tab];
+      }
+      let currentSlide = 0;
+      function changeSlide(dir) {
+        const slides = document.querySelectorAll("#slider .slide");
+        slides[currentSlide].classList.add("hidden");
+        currentSlide = (currentSlide + dir + slides.length) % slides.length;
+        slides[currentSlide].classList.remove("hidden");
+      }
+      const statsObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target.querySelector("span[data-target]");
+              const target = parseInt(el.dataset.target);
+              let cur = 0;
+              const step = Math.max(1, Math.floor(target / 40));
+              const iv = setInterval(() => {
+                cur += step;
+                if (cur >= target) {
+                  el.textContent = target + "+";
+                  clearInterval(iv);
+                } else {
+                  el.textContent = cur;
+                }
+              }, 50);
+              statsObs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      document
+        .querySelectorAll(".values-item")
+        .forEach((el) => statsObs.observe(el));
+      const rowObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 200);
+              rowObs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+      document
+        .querySelectorAll(".process-row")
+        .forEach((el) => rowObs.observe(el));
+    </script>
+  </body>
+</html>
